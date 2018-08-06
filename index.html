@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Submit_Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div id="success-dialog">
+    <button id="success-icon-button"><i class="fa fa-check" aria-hidden="true" style="font-size:40px"></i>
+    </button>
+    <p id="success">Success message</p>
+    <button id="try-again-button">Try again</button>
+</div>
+<div class='form-wrapper' id='wrapper'>
+    <form class="submit-form" id="form">
+        <div id="form-header">
+            <p id='form-label'>Submit Form</p>
+        </div>
+        <input type="text" id="name" placeholder="First name" minlength="3" maxlength="10" required autocomplete='off'></input>
+        <input type="number" id="age" min="1" max="99" required placeholder="Age"></input>
+        <input type="date" id="birthday" required placeholder="Hire Date"></input>
+        <input type="email" id="mail" name="mail" placeholder="userName@domain.com" required autocomplete='off'></input>
+        <input type="zip" id="zip" name="zip" pattern="[0-9]{5}" placeholder="zip (ex. 94086)" required autocomplete='off'></input>
+        <input type="tel" id="phone" pattern="^[1-9]\d{2}-\d{3}-\d{4}" placeholder="phone (ex: ###-###-####)" required autocomplete='off'></input>
+        <button id="submit-button">Submit</button>
+    </form>
+</div>
+<footer>
+    <p class=made-by><i class="fa fa-copyright" aria-hidden="true"></i> made by <a href="https://codepen.io/o1ena/full/gmXWrN/" target="_blank">o1ena</a>
+    </p>
+</footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
